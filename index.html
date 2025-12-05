@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>Tic-Tac-Toe Cyber 2D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ambient-light"></div>
+    <div class="cyber-grid"></div>
+
+    <div class="background-shapes">
+        <div class="shape x-shape huge pos-1">X</div>
+        <div class="shape o-shape huge pos-2">O</div>
+        <div class="shape x-shape huge pos-3">X</div>
+        <div class="shape o-shape huge pos-4">O</div>
+
+        <div class="shape x-shape medium pos-5">X</div>
+        <div class="shape o-shape medium pos-6">O</div>
+        <div class="shape x-shape medium pos-7">X</div>
+        <div class="shape o-shape medium pos-8">O</div>
+        <div class="shape x-shape medium pos-9">X</div>
+        <div class="shape o-shape medium pos-10">O</div>
+
+        <div class="shape x-shape small pos-11">X</div>
+        <div class="shape o-shape small pos-12">O</div>
+        <div class="shape x-shape small pos-13">X</div>
+        <div class="shape o-shape small pos-14">O</div>
+        <div class="shape x-shape small pos-15">X</div>
+        <div class="shape o-shape small pos-16">O</div>
+    </div>
+
+    <main class="glass-panel">
+        <header>
+            <h1 class="glitch-text" data-text="Tic-Tac-Toe">Tic-Tac-Toe</h1>
+            <div class="status-pill">
+                <span id="state">SYSTEM READY</span>
+                <span class="turn-indicator">TURN: <strong id="turn">X</strong></span>
+            </div>
+        </header>
+
+        <section id="board" class="board">
+            <button class="cell" data-idx="0"></button>
+            <button class="cell" data-idx="1"></button>
+            <button class="cell" data-idx="2"></button>
+            <button class="cell" data-idx="3"></button>
+            <button class="cell" data-idx="4"></button>
+            <button class="cell" data-idx="5"></button>
+            <button class="cell" data-idx="6"></button>
+            <button class="cell" data-idx="7"></button>
+            <button class="cell" data-idx="8"></button>
+        </section>
+
+        <div class="widgets-container">
+            <div class="widget">
+                <span class="label">PLAYER X</span>
+                <span class="score" id="score-x">0</span>
+            </div>
+            <div class="widget">
+                <span class="label">DRAW</span>
+                <span class="score" id="score-draw">0</span>
+            </div>
+            <div class="widget">
+                <span class="label">PLAYER O</span>
+                <span class="score" id="score-o">0</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="reset" class="btn-primary">REBOOT</button>
+            <button id="reset-all" class="btn-secondary">RESET DATA</button>
+        </div>
+    </main>
+
+    <div class="scanlines"></div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
